@@ -1,0 +1,56 @@
+bot:
+
+    token:                          !ENV "BOT_TOKEN"
+
+style:
+
+    colours:
+
+        techrock:                   0x4b4740
+
+    emojis:
+
+        thinking:                   "\U0001F914"
+
+        thumbs_up:                  "\U0001F44D"
+        thumbs_down:                "\U0001F44E"
+
+        okay:                       "\U00002705"
+        error:                      "\U0000274C"
+        warning:                    "\U000026A0"
+        loading:                    "\U0001F504"
+
+        circle_red:                 "\U0001F534"
+        circle_green:               "\U0001F7E2"
+        circle_blue:                "\U0001F535"
+
+    icons:
+
+        techrock:                   'https://cdn.discordapp.com/emojis/649191388965109791.png'
+        techrock_square:            'https://cdn.discordapp.com/icons/403047405877985281/50e34e698a262d69e322383b5315cd5a.png'
+
+server:
+
+    ftp:     
+
+        smp:
+
+            ip:                     !ENV "FTP_SMP_IP"
+            pt:                     21
+            un:                     !ENV "FTP_SMP_UN"
+            pw:                     !ENV "FTP_SMP_PW"
+
+            userlist:               "/whitelist.json"
+
+        cmp:
+
+            ip:                     !ENV "FTP_CMP_IP"
+            pt:                     21
+            un:                     !ENV "FTP_CMP_UN"
+            pw:                     !ENV "FTP_CMP_PW"
+
+            userlist:               "/permissions.json"
+
+config:
+
+    required_keys:                  ['bot.token']
